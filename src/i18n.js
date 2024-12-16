@@ -13,7 +13,7 @@ i18n
       ar: { translation: ar },
       de: { translation: de },
       },
-      lng: "de",
+      lng: "en",
     fallbackLng: "en", // اللغة الافتراضية
     interpolation: {
       escapeValue: false, // لا حاجة له عند استخدام React

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 // import { AiFillGithub } from "react-icons/ai";
 
 // استيراد الصورة الخاصة بك
-import personalImage from '../assets/images/personal.JPG'; // تأكد من صحة المسار
+import personalImage from '../assets/images/personal.jpg'; // تأكد من صحة المسار
 
 const Footer = () => {
   const { t,i18n } = useTranslation();
@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="mt-10 md:mt-0">
           <img
-            src={personalImage} // استخدام المسار الذي تم استيراده
+            src={personalImage}
             alt="Mohammad Abdel Razzaq Khalifa"
             className="w-[200px] h-[200px] border-2 border-dark_primary relative z-[5] rounded-full"
           />
