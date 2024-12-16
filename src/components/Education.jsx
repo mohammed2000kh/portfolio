@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Lottie from "react-lottie";
+import Lottie from "react-lottie-player";
 import animationData from "../assets/images/Education/login.json";
 import { motion } from "framer-motion";
 import universityLogo from '../assets/images/Education/tuebingen-university-logo.png';
@@ -74,7 +74,7 @@ const Education = () => {
         transition={{ duration: 1 }}
       >
         <div className="sm:w-[400px] sm:h-[400px] w-[300px] h-[300px] relative z-[5] flex md:flex-row flex-col-reverse py-0 sm:py-6 pointer-events-none">
-          <Lottie options={defaultOptions} />
+          <Lottie {...defaultOptions} />
         </div>
 
         <div className={`flex-1 flex justify-center items-start flex-col`}>
