@@ -11,7 +11,8 @@ const Footer = () => {
   const { t,i18n } = useTranslation();
 	const isArabic = i18n.language === 'ar';
   const about = t("about_me", { returnObjects: true }) || [];
-  const personalImage = "/public/MedicalLogo.jpg";
+  const personalImage = "/MedicalLogo.jpg";
+
   return (
     <footer id="contact" className="bg-secondaryLinear sm:px-16 px-6">
       <div
