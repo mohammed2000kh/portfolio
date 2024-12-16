@@ -1,0 +1,234 @@
+{
+  "education2": {
+    "title": "Bildung",
+    "list": [
+      {
+        "id": "education-1",
+        "title": "Universität Tübingen, Deutschland",
+        "degree": "Bachelor in Medizin",
+        "duration": "2015 - 2024",
+        "content1": "Studierte Medizin anderthalb Jahre an der Universität Aleppo, bevor er nach Deutschland zog.",
+        "content2": "Abschluss des Medizinstudiums mit einem Stipendium von Evangisches Studienwerk Villigst."
+      }
+    ],
+    "no_features": "Keine Funktionen zur Anzeige."
+  },
+  "experience": {
+    "title": "Erfahrungen",
+    "content": [
+      {
+        "organisation": "Globale Gesundheitsinitiative",
+        "logo": "src/assets/images/Experience/MedicalLogo.JPG",
+        "link": "https://www.globalhealth.org/",
+        "position": [
+          {
+            "title": "Medizinischer Freiwilliger",
+            "duration": "Juni 2022 - Jetzt",
+            "content": [
+              {
+                "text": "Erbrachte Gesundheitsdienstleistungen für benachteiligte Gemeinschaften durch Outreach-Programme und mobile Kliniken.",
+                "tech": [
+                  {
+                    "id": "m-1",
+                    "icon": "FaStethoscope",
+                    "name": "Klinische Diagnose"
+                  },
+                  {
+                    "id": "m-2",
+                    "icon": "FaHandsHelping",
+                    "name": "Humanitäre Hilfe"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "Städtisches Krankenhaus",
+        "logo": "src/assets/images/Experience/ResearchLogo.JPG",
+        "link": "https://www.cityhospital.com/",
+        "position": [
+          {
+            "title": "Assistenzarzt",
+            "duration": "Januar 2020 - Mai 2024",
+            "content": [
+              {
+                "text": "Führte Patientenrunden durch, half bei Operationen und verwaltete tägliche Stationen.",
+                "tech": [
+                  {
+                    "id": "h-1",
+                    "icon": "FaClinicMedical",
+                    "name": "Krankenhausbetrieb"
+                  },
+                  {
+                    "id": "h-2",
+                    "icon": "SiMongodb",
+                    "name": "Elektronische Patientenakten (EMR)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "Nationales Forschungszentrum",
+        "logo": "src/assets/images/Experience/HospitalLogo.JPG",
+        "link": "https://www.nrc-research.org/",
+        "position": [
+          {
+            "title": "Medizinischer Forscher",
+            "duration": "August 2018 - Dezember 2019",
+            "content": [
+              {
+                "text": "Beteiligte sich an der Onkologie-Forschung mit Fokus auf neue Behandlungsmethoden und die Verbesserung der Patientenversorgung.",
+                "tech": [
+                  {
+                    "id": "r-1",
+                    "icon": "FaMicroscope",
+                    "name": "Laborforschung"
+                  },
+                  {
+                    "id": "r-2",
+                    "icon": "FaBookMedical",
+                    "name": "Medizinische Dokumentation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Datenanalyst",
+            "duration": "Januar 2018 - Juli 2018",
+            "content": [
+              {
+                "text": "Analyse von medizinischen Daten nach Trends und Mustern mit Python und PostgreSQL.",
+                "tech": [
+                  {
+                    "id": "d-1",
+                    "icon": "SiPython",
+                    "name": "Python"
+                  },
+                  {
+                    "id": "d-2",
+                    "icon": "SiPostgresql",
+                    "name": "PostgreSQL"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "info": {
+    "title": "Hallo",
+    "sub1": "da",
+    "sub2": "Ich bin",
+    "firstName": "Mohammad",
+    "LastName": "Khalifa",
+    "info_content": [
+      {
+        "count": "A",
+        "text": "Engagierter Arzt und öffentlicher Fürsprecher, der seit 2015 in Deutschland lebt, derzeit am Universitätsklinikum Tübingen arbeitet und sich auf Onkologie spezialisiert."
+      }
+    ]
+  },
+  "navs": [
+    {
+      "link": "#skills",
+      "title": "Fähigkeiten & Erfahrung"
+    },
+    {
+      "link": "#education",
+      "title": "Ausbildung"
+    },
+    {
+      "link": "#contact",
+      "title": "Kontaktiere mich"
+    }
+  ],
+  "skills": {
+    "title": "Fähigkeiten",
+    "list": [
+      {
+        "title": "Medizinische Fähigkeiten",
+        "items": [
+          {
+            "id": "ms-1",
+            "icon": "FaStethoscope",
+            "name": "Patienten Diagnose und Betreuung"
+          },
+          {
+            "id": "ms-2",
+            "icon": "FaUserMd",
+            "name": "Medizinische Freiwilligenarbeit"
+          },
+          {
+            "id": "ms-3",
+            "icon": "FaSyringe",
+            "name": "Grundlegende und fortgeschrittene medizinische Verfahren"
+          },
+          {
+            "id": "ms-4",
+            "icon": "FaMicroscope",
+            "name": "Forschung und Laborarbeit"
+          },
+          {
+            "id": "ms-5",
+            "icon": "FaBookMedical",
+            "name": "Medizinische Ausbildung und Schulung"
+          }
+        ]
+      },
+      {
+        "title": "Humanitäre und zwischenmenschliche Fähigkeiten",
+        "items": [
+          {
+            "id": "hs-1",
+            "icon": "FaHandsHelping",
+            "name": "Unterstützung für Flüchtlinge und Migranten"
+          },
+          {
+            "id": "hs-2",
+            "icon": "FaLanguage",
+            "name": "Mehrsprachige Kommunikation (Arabisch, Deutsch, Englisch)"
+          },
+          {
+            "id": "hs-3",
+            "icon": "FaProjectDiagram",
+            "name": "Projektmanagement und Planung"
+          }
+        ]
+      },
+      {
+        "title": "Technische und berufliche Fähigkeiten",
+        "items": [
+          {
+            "id": "ts-1",
+            "icon": "FaLaptopMedical",
+            "name": "Medizinische Informatik"
+          },
+          {
+            "id": "ts-2",
+            "icon": "FaRegHospital",
+            "name": "Krankenhaus- und Klinikbetrieb"
+          },
+          {
+            "id": "ts-3",
+            "icon": "FaClinicMedical",
+            "name": "Vorbereitung auf die Spezialisierung in der Onkologie"
+          }
+        ]
+      }
+    ]
+  },
+  "about_me": {
+    "name": "Mohammad Abdel Razzaq Khalifa",
+    "tagLine": "Arzt | Medizinstudent an der Universität Tübingen | Onkologie-Spezialist in der Ausbildung",
+    "intro": "Ich bin Arzt und Enthusiast für öffentliche Angelegenheiten, lebe seit 2015 in Deutschland. Derzeit arbeite ich im Tübinger Krankenhaus und verfolge eine Spezialisierung in Onkologie. Ich habe Medizin eineinhalb Jahre an der Universität Aleppo studiert, bevor ich meine medizinische Ausbildung in Deutschland fortgesetzt habe, wo ich mein Studium an der Universität Tübingen mit einem Stipendium aufgrund meiner akademischen Exzellenz abgeschlossen habe.",
+    "resume":"resume"
+  }
+}

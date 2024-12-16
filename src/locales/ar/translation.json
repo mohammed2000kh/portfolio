@@ -1,0 +1,236 @@
+{
+  "education2": {
+    "title": "التعليم",
+    "list": [
+      {
+        "id": "education-1",
+        "title": "جامعة توبنغن، ألمانيا",
+        "degree": "بكالوريوس في الطب",
+        "duration": "2015 - 2024",
+        "content1": "دَرَسْتُ الطب لمدة عام ونصف في جامعة حلب قبل الانتقال إلى ألمانيا.",
+        "content2": "أكملت دراستي الطبية بمنحة دراسية من مؤسسة إيفانجيليستش Studienwerk Villigst."
+      }
+    ],
+    "no_features": "لا توجد ميزات لعرضها."
+  },
+  "experience": {
+    "title": "الخبرات",
+    "content": [
+      {
+        "organisation": "مبادرة الصحة العالمية",
+        "logo": "src/assets/images/Experience/MedicalLogo.JPG",
+        "link": "https://www.globalhealth.org/",
+        "position": [
+          {
+            "title": "متطوع طبي",
+            "duration": "يونيو 2022 - الآن",
+            "content": [
+              {
+                "text": "قدمت خدمات الرعاية الصحية للمجتمعات المحرومة من خلال برامج التوعية والعيادات المتنقلة.",
+                "tech": [
+                  {
+                    "id": "m-1",
+                    "icon": "FaStethoscope",
+                    "name": "التشخيص السريري"
+                  },
+                  {
+                    "id": "m-2",
+                    "icon": "FaHandsHelping",
+                    "name": "المساعدات الإنسانية"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "مستشفى المدينة العام",
+        "logo": "src/assets/images/Experience/ResearchLogo.JPG",
+        "link": "https://www.cityhospital.com/",
+        "position": [
+          {
+            "title": "طبيب مقيم",
+            "duration": "يناير 2020 - مايو 2024",
+            "content": [
+              {
+                "text": "قمت بإجراء جولات للمرضى، ساعدت في العمليات الجراحية، وأدرت العمليات اليومية في الأقسام.",
+                "tech": [
+                  {
+                    "id": "h-1",
+                    "icon": "FaClinicMedical",
+                    "name": "عمليات المستشفى"
+                  },
+                  {
+                    "id": "h-2",
+                    "icon": "SiMongodb",
+                    "name": "السجلات الطبية الإلكترونية (EMR)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "المركز الوطني للبحوث",
+        "logo": "src/assets/images/Experience/HospitalLogo.JPG",
+        "link": "https://www.nrc-research.org/",
+        "position": [
+          {
+            "title": "باحث طبي",
+            "duration": "أغسطس 2018 - ديسمبر 2019",
+            "content": [
+              {
+                "text": "شاركت في أبحاث الأورام التي تركز على أساليب العلاج الجديدة وتحسين رعاية المرضى.",
+                "tech": [
+                  {
+                    "id": "r-1",
+                    "icon": "FaMicroscope",
+                    "name": "البحث في المختبر"
+                  },
+                  {
+                    "id": "r-2",
+                    "icon": "FaBookMedical",
+                    "name": "التوثيق الطبي"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "محلل بيانات",
+            "duration": "يناير 2018 - يوليو 2018",
+            "content": [
+              {
+                "text": "حللت البيانات الطبية للبحث عن الاتجاهات والأنماط باستخدام بايثون و PostgreSQL.",
+                "tech": [
+                  {
+                    "id": "d-1",
+                    "icon": "SiPython",
+                    "name": "بايثون"
+                  },
+                  {
+                    "id": "d-2",
+                    "icon": "SiPostgresql",
+                    "name": "PostgreSQL"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+    "info": {
+      "title": "مرحباً",
+      "sub1": "بكم",
+      "sub2": "",
+      "firstName": "أنا محمد خليفة",
+      "LastName": " ",
+      "info_content": [
+        {
+          "count": "أنا",
+          "text": "طبيب مخلص ومدافع عام مقيم في ألمانيا منذ عام 2015، أعمل حالياً في مستشفى توبينغن وأتخصص في مجال الأورام."
+        }
+      ],"lets_connect":"لنتواصل"
+    },
+      "navs": [
+        {
+          "link": "#skills",
+          "title": "المهارات والخبرة"
+        },
+        {
+          "link": "#education",
+          "title": "التعليم"
+        },
+        {
+          "link": "#contact",
+          "title": "تواصل معي"
+        }
+      ],
+        "skills": {
+          "title": "المهارات",
+          "list": [
+            {
+              "title": "المهارات الطبية",
+              "items": [
+                {
+                  "id": "ms-1",
+                  "icon": "FaStethoscope",
+                  "name": "تشخيص المرضى ورعايتهم"
+                },
+                {
+                  "id": "ms-2",
+                  "icon": "FaUserMd",
+                  "name": "العمل التطوعي الطبي"
+                },
+                {
+                  "id": "ms-3",
+                  "icon": "FaSyringe",
+                  "name": "الإجراءات الطبية الأساسية والمتقدمة"
+                },
+                {
+                  "id": "ms-4",
+                  "icon": "FaMicroscope",
+                  "name": "البحث والعمل في المختبرات"
+                },
+                {
+                  "id": "ms-5",
+                  "icon": "FaBookMedical",
+                  "name": "التعليم والتدريب الطبي"
+                }
+              ]
+            },
+            {
+              "title": "المهارات الإنسانية والتعاملية",
+              "items": [
+                {
+                  "id": "hs-1",
+                  "icon": "FaHandsHelping",
+                  "name": "دعم اللاجئين والمهاجرين"
+                },
+                {
+                  "id": "hs-2",
+                  "icon": "FaLanguage",
+                  "name": "التواصل متعدد اللغات (العربية، الألمانية، الإنجليزية)"
+                },
+                {
+                  "id": "hs-3",
+                  "icon": "FaProjectDiagram",
+                  "name": "إدارة المشاريع والتخطيط"
+                }
+              ]
+            },
+            {
+              "title": "المهارات التقنية والمهنية",
+              "items": [
+                {
+                  "id": "ts-1",
+                  "icon": "FaLaptopMedical",
+                  "name": "المعلوماتية الطبية"
+                },
+                {
+                  "id": "ts-2",
+                  "icon": "FaRegHospital",
+                  "name": "إدارة المستشفيات والعيادات"
+                },
+                {
+                  "id": "ts-3",
+                  "icon": "FaClinicMedical",
+                  "name": "التحضير للتخصص في الأورام"
+                }
+              ]
+            }
+          ]
+        },
+          "about_me": {
+            "name": "محمد عبد الرزاق خليفة",
+            "tagLine": "طبيب | طالب طب في جامعة توبنغن | متخصص في مجال الأورام",
+            "intro": "أنا طبيب وناشط في الشؤون العامة، مقيم في ألمانيا منذ عام 2015. أعمل حاليًا في مستشفى توبنغن وأتابع تخصصي في الأورام. درست الطب لمدة عام ونصف في جامعة حلب قبل أن أكمل تعليمي الطبي في ألمانيا، حيث أكملت دراستي في جامعة توبنغن بمنحة دراسية بفضل تفوقي الأكاديمي.",
+            "resume":"السيرة الذاتية"
+          }
+        
+        
+      }

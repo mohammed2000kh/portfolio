@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -6,39 +7,78 @@ import {
 import { motion } from "framer-motion";
 import { BsLink45Deg } from "react-icons/bs";
 import "react-vertical-timeline-component/style.min.css";
-import { EXPERIENCES } from "../constants";
+import {
+    FaStethoscope,
+    FaHandsHelping,
+    FaClinicMedical,
+    FaMicroscope,
+    FaBookMedical,
+} from "react-icons/fa";
+import { SiMongodb, SiPython, SiPostgresql } from "react-icons/si";
 
-const Content = ({ text, link, tech }) => {
+const iconMap = {
+    FaStethoscope,
+    FaHandsHelping,
+    FaClinicMedical,
+    FaMicroscope,
+    FaBookMedical,
+    SiMongodb,
+    SiPython,
+    SiPostgresql,
+};
+
+const Modal = ({ image, onClose }) => {
+    if (!image) return null;
+
+    return (
+        <div
+            className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75 z-50"
+            onClick={onClose}
+        >
+            <div className="relative">
+                <img
+                    src={image}
+                    alt="Expanded view"
+                    className="max-w-[90%] max-h-[90%] object-contain rounded-lg"
+                />
+                <button
+                    onClick={onClose}
+                    className="absolute top-2 right-2 text-white text-lg"
+                >
+                    &times;
+                </button>
+            </div>
+        </div>
+    );
+};
+
+const Content = ({ link, tech }) => {
     return (
         <div>
             <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
-                {text}{" "}
-                {link ? (
-                    <a href={link} target="_blank">
+                {link && (
+                    <a href={link} target="_blank" rel="noopener noreferrer">
                         <BsLink45Deg
                             size="1rem"
                             className="inline hover:text-white"
                         />
                     </a>
-                ) : (
-                    ""
                 )}
             </p>
 
             {tech && (
                 <>
-                    <p className="font-poppins font-normal text-dimWhite mt-3">
-                        Tech Stack
-                    </p>
+                    <p className="font-poppins font-normal text-dimWhite mt-3"></p>
                     <div className="mt-2 text-gray-500 capitalize dark:text-gray-300">
                         <p className="flex sm:flex-row flex-wrap gap-5">
                             {tech.map((tech, index) => (
                                 <span
-                                    key={tech.id}
-                                    index={index}
+                                    key={`tech-${index}`}
                                     className="text-dimWhite text-[20px] hover:text-[#8dbbeb] tooltip"
                                 >
-                                    {React.createElement(tech.icon)}
+                                    {iconMap[tech.icon]
+                                        ? React.createElement(iconMap[tech.icon])
+                                        : null}
                                     <span className="tooltiptext">{tech.name}</span>
                                 </span>
                             ))}
@@ -50,108 +90,107 @@ const Content = ({ text, link, tech }) => {
     );
 };
 
-const ExperienceCard = ({ experience }) => {
-    const { logo, organisation, positions } = experience;
-    const [showModal, setShowModal] = useState(false);
-
-    const handleImageClick = () => {
-        setShowModal(true);
-    };
-
-    const closeModal = () => {
-        setShowModal(false);
-    };
-
+const ExperienceCard = ({ experience, onImageClick }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
-                background: 'transparent',
-                border: '0.1px solid white',
-                maxWidth: '600px',
+                background: "transparent",
+                border: "0.1px solid white",
+                maxWidth: "600px",
+                direction:  "ltr",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-            date={experience.date}
-            iconStyle={{ background: 'white' }}
+            iconStyle={{ background: "white" }}
             icon={
-                <div className='flex justify-center items-center w-full h-full'>
+                <div
+                    className="flex justify-center items-center w-full h-full cursor-pointer"
+                    onClick={() => onImageClick(experience.logo)}
+                >
                     <img
-                        src={logo}
-                        alt={organisation}
-                        className='w-[100%] h-[100%] object-cover rounded-full cursor-pointer'
-                        onClick={handleImageClick}
+                        src={experience.logo}
+                        alt={experience.organisation}
+                        className="w-[100%] h-[100%] object-cover rounded-full"
                     />
                 </div>
             }
         >
+            <div dir={/^[\u0600-\u06FF]/.test(experience.organisation.charAt(0)) ? 'rtl' : 'ltr'}>
             <div>
-                <h3 className='text-white text-[24px] font-bold'>{organisation}</h3>
+                <h3 className="text-white text-[24px] font-bold">
+                    {experience.organisation}
+                </h3>
+                <a
+                    href={experience.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <BsLink45Deg className="inline hover:text-white ml-2" />
+                </a>
             </div>
 
-            <ol className='relative ml-5 mt-5 list-none space-y-2 border-l border-gray-200'>
-                {positions.map((position, index) => {
-                    return (
-                        <li
-                            key={`card-${index}`}
-                            className={`${index === positions.length - 1 ? "mb-0" : "mb-4"
-                                } ml-4`}
-                        >
-                            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-white"></div>
-                            <h3 className="text-lg font-semibold text-dark_primary">
-                                {position.title}
-                            </h3>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-                                {position.duration}
-                            </time>
+            {experience.position.map((position, index) => (
+                <div key={index} className="mt-4">
+                    <h4 className="text-white text-[20px] font-semibold">
+                        {position.title}
+                    </h4>
+                    <p className="text-gray-400">{position.duration}</p>
+                    {position.content.map((item, idx) => (
+                        <div key={idx} className="mt-2">
+                            <p className="text-gray-300">{item.text}</p>
                             {position.content.map((info, index) => (
                                 <Content key={`content-${index}`} index={index} {...info} />
                             ))}
-                        </li>
-                    );
-                })}
-            </ol>
-
-            {showModal && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                    <div className="relative">
-                        <img
-                            src={logo}
-                            alt={organisation}
-                            className="w-[500px] h-[500px] object-contain rounded-lg"
-                        />
-                        <button
-                            className="absolute top-0 right-0 bg-white p-2 rounded-full"
-                            onClick={closeModal}
-                        >
-                            X
-                        </button>
-                    </div>
+                        </div>
+                    ))}
                 </div>
-            )}
+            ))}</div>
         </VerticalTimelineElement>
     );
 };
 
 const Experience = () => {
+    const { t } = useTranslation();
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const experience =
+        t("experience.content", { returnObjects: true }) || [];
+    const title =
+        t("experience.title", { returnObjects: true }) || {
+            title: "Default Title",
+        };
+
     return (
-        <div id="experience" className="sm:mb-0 sm:px-16 px-6 py-4">
+        <div id="experience" dir="ltr" className="sm:mb-0 sm:px-16 px-6 py-4 ">
             <motion.h1
                 whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-                transition={{ duration: 1, type: 'spring', stiffness: "120" }}
+                transition={{ duration: 1, type: "spring", stiffness: "120" }}
                 className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] ss:leading-[80px] leading-[80px] text-white"
+                dir={title.charAt(0)=="ا" ? 'rtl' : 'ltr'}
             >
-                Experience
+                {title}
             </motion.h1>
 
-            <div className='mt-10 flex flex-col'>
+            <div className={`mt-10 flex flex-col `}>
                 <VerticalTimeline>
-                    {EXPERIENCES.map((experience, index) => (
-                        <ExperienceCard
-                            key={`experience-${index}`}
-                            experience={experience}
-                        />
-                    ))}
+                    {experience.length > 0 ? (
+                        experience.map((experience, index) => (
+                            
+                            <ExperienceCard
+                                key={`experience-${index}`}
+                                experience={experience}
+                                onImageClick={setSelectedImage}
+                            />
+                        ))
+                    ) : (
+                        <p className="text-white">لا توجد بيانات حالياً لعرضها.</p>
+                    )}
                 </VerticalTimeline>
             </div>
+
+            <Modal
+                image={selectedImage}
+                onClose={() => setSelectedImage(null)}
+            />
         </div>
     );
 };

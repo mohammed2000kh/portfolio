@@ -10,16 +10,22 @@ import Loading from "./components/Loading";
 // const Projects = lazy(() => import("./components/Projects"));
 // const OpenSource = lazy(() => import("./components/OpenSource"));
 import Experience from "./components/Experience";
+import { useTranslation } from "react-i18next";  // إضافة لاستعمال الترجمة
 
 const App = () => {
-
+  const { i18n } = useTranslation();  // الوصول إلى حالة اللغة
   useEffect(() => {
     Aos.init({
       duration: 1800,
       offset: 100,
       disable: "mobile",
-    });
-  }, []);
+    });// ضبط اتجاه الصفحة بناءً على اللغة
+    if (i18n.language === "ar") {
+      document.documentElement.setAttribute("dir", "rtl");
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+    }
+  }, [i18n.language]);  // تحديث الاتجاه كلما تغيرت اللغة
 
   return (
     <Suspense fallback={<Loading />}>

@@ -1,13 +1,14 @@
-import Hero_person from "../assets/images/Hero/main_comp2.json";
+
 
 export { SOCIAL_MEDIA } from './socialMedia';
-export { SKILLS_LIST } from './skillsList';
-export { EXPERIENCES } from './experience';
-export { EDUCATION_LIST } from './education';
+// export { SKILLS_LIST } from './skillsList';
+// export { EXPERIENCES } from './experience';
+// export { EDUCATION_LIST } from './education';
 // export { PROJECTS } from './projects';
 // export { OPEN_SOURCE_CONTRIBUTIONS } from './openSource';
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1fAlHoNfCHkJCkmcpGFzbanTZorT2r2U_/view";
+export const RESUME_LINK = "https://drive.google.com";
+// export const RESUME_LINK = "https://drive.google.com/file/d/1fAlHoNfCHkJCkmcpGFzbanTZorT2r2U_/view";
 export const REPO_LINK = "https://github.com/Sudhanva-Nadiger/Portfolio";
 
 export const CONTENT = {
@@ -33,24 +34,23 @@ export const CONTENT = {
             title: "Contact Me",
         },
     ],
-    hero: {
-        title: `Hello,`,
-        sub1: "there",
-        sub2: "I am",
-        firstName: "Mohammad",
-        LastName: "Khalifa",
-        image: Hero_person,
-        hero_content: [
-            {
-                count: "A",
-                text: "dedicated physician and public advocate residing in Germany since 2015, currently working at Tübingen Hospital and pursuing specialization in oncology.",
-            },
-        ],
-    },
+    // hero: {
+    //     title: `Hello,`,
+    //     sub1: "there",
+    //     sub2: "I am",
+    //     firstName: "Mohammad",
+    //     LastName: "Khalifa",
+    //     hero_content: [
+    //         {
+    //             count: "A",
+    //             text: "dedicated physician and public advocate residing in Germany since 2015, currently working at Tübingen Hospital and pursuing specialization in oncology.",
+    //         },
+    //     ],
+    // },
 
-    Footer: {
-        text: "All © Copy Right Reserved 2023",
-    },
+    // Footer: {
+    //     text: "All © Copy Right Reserved 2023",
+    // },
 };
 
 export const ABOUT_ME = {

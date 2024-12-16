@@ -1,0 +1,234 @@
+{
+  "education2": {
+    "title": "Education",
+    "list": [
+      {
+        "id": "education-1",
+        "title": "University of Tübingen, Germany",
+        "degree": "Bachelor of Medicine",
+        "duration": "2015 - 2024",
+        "content1": "Studied Medicine for one and a half years at Aleppo University before moving to Germany.",
+        "content2": "Completed medical studies with a scholarship from Evangisches Studienwerk Villigst."
+      }
+    ],
+    "no_features": "No features to display."
+  },
+  "experience": {
+    "title": "Experience",
+    "content": [
+      {
+        "organisation": "Global Health Initiative",
+        "logo": "src/assets/images/Experience/MedicalLogo.JPG",
+        "link": "https://www.globalhealth.org/",
+        "position": [
+          {
+            "title": "Medical Volunteer",
+            "duration": "June 2022 - Current",
+            "content": [
+              {
+                "text": "Provided healthcare services to underserved communities through outreach programs and mobile clinics.",
+                "tech": [
+                  {
+                    "id": "m-1",
+                    "icon": "FaStethoscope",
+                    "name": "Clinical Diagnosis"
+                  },
+                  {
+                    "id": "m-2",
+                    "icon": "FaHandsHelping",
+                    "name": "Humanitarian Aid"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "City General Hospital",
+        "logo": "src/assets/images/Experience/ResearchLogo.JPG",
+        "link": "https://www.cityhospital.com/",
+        "position": [
+          {
+            "title": "Resident Doctor",
+            "duration": "Jan 2020 - May 2024",
+            "content": [
+              {
+                "text": "Conducted patient rounds, assisted in surgeries, and managed daily ward operations.",
+                "tech": [
+                  {
+                    "id": "h-1",
+                    "icon": "FaClinicMedical",
+                    "name": "Hospital Operations"
+                  },
+                  {
+                    "id": "h-2",
+                    "icon": "SiMongodb",
+                    "name": "Electronic Medical Records (EMR)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "organisation": "National Research Center",
+        "logo": "src/assets/images/Experience/HospitalLogo.JPG",
+        "link": "https://www.nrc-research.org/",
+        "position": [
+          {
+            "title": "Medical Researcher",
+            "duration": "Aug 2018 - Dec 2019",
+            "content": [
+              {
+                "text": "Participated in oncology research focusing on new treatment methodologies and patient care improvement.",
+                "tech": [
+                  {
+                    "id": "r-1",
+                    "icon": "FaMicroscope",
+                    "name": "Lab Research"
+                  },
+                  {
+                    "id": "r-2",
+                    "icon": "FaBookMedical",
+                    "name": "Medical Documentation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Data Analyst",
+            "duration": "Jan 2018 - July 2018",
+            "content": [
+              {
+                "text": "Analyzed medical data for trends and patterns using Python and PostgreSQL.",
+                "tech": [
+                  {
+                    "id": "d-1",
+                    "icon": "SiPython",
+                    "name": "Python"
+                  },
+                  {
+                    "id": "d-2",
+                    "icon": "SiPostgresql",
+                    "name": "PostgreSQL"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "info": {
+    "title": "Hello",
+    "sub1": "there",
+    "sub2": "I am",
+    "firstName": "Mohammad",
+    "LastName": "Khalifa",
+    "info_content": [
+      {
+        "count": "A",
+        "text": "dedicated physician and public advocate residing in Germany since 2015, currently working at Tübingen Hospital and pursuing specialization in oncology."
+      }
+    ],
+    "lets_connect":"Lets connect"
+  },
+  "navs": [
+    {
+      "link": "#skills",
+      "title": "Skills & Experience"
+    },
+    {
+      "link": "#education",
+      "title": "Education"
+    },
+    {
+      "link": "#contact",
+      "title": "Contact Me"
+    }
+  ],
+  "skills": {
+    "title": "Skills",
+    "list": [
+      {
+        "title": "Medical Skills",
+        "items": [
+          {
+            "id": "ms-1",
+            "icon": "FaStethoscope",
+            "name": "Patient Diagnosis and Care"
+          },
+          {
+            "id": "ms-2",
+            "icon": "FaUserMd",
+            "name": "Medical Volunteerism"
+          },
+          {
+            "id": "ms-3",
+            "icon": "FaSyringe",
+            "name": "Basic and Advanced Medical Procedures"
+          },
+          {
+            "id": "ms-4",
+            "icon": "FaMicroscope",
+            "name": "Research and Laboratory Work"
+          },
+          {
+            "id": "ms-5",
+            "icon": "FaBookMedical",
+            "name": "Medical Education and Training"
+          }
+        ]
+      },
+      {
+        "title": "Humanitarian and Interpersonal Skills",
+        "items": [
+          {
+            "id": "hs-1",
+            "icon": "FaHandsHelping",
+            "name": "Support for Refugees and Immigrants"
+          },
+          {
+            "id": "hs-2",
+            "icon": "FaLanguage",
+            "name": "Multilingual Communication (Arabic, German, English)"
+          },
+          {
+            "id": "hs-3",
+            "icon": "FaProjectDiagram",
+            "name": "Project Management and Planning"
+          }
+        ]
+      },
+      {
+        "title": "Technical and Professional Skills",
+        "items": [
+          {
+            "id": "ts-1",
+            "icon": "FaLaptopMedical",
+            "name": "Medical Informatics"
+          },
+          {
+            "id": "ts-2",
+            "icon": "FaRegHospital",
+            "name": "Hospital and Clinic Operations"
+          },
+          {
+            "id": "ts-3",
+            "icon": "FaClinicMedical",
+            "name": "Oncology Specialization Preparation"
+          }
+        ]
+      }
+    ]
+  },
+  "about_me" : {
+    "name": "Mohammad Abdel Razzaq Khalifa",
+    "tagLine": "Doctor | Medical Student @University of Tübingen | Oncology Specialist in Training",
+    "intro": "I am a doctor and public affairs enthusiast, residing in Germany since 2015. Currently, I am working at Tübingen Hospital and pursuing specialization in Oncology. I studied medicine for one and a half years at Aleppo University before continuing my medical education in Germany, where I completed my studies at the University of Tübingen with a scholarship due to my academic excellence.",
+    "resume":"resume"
+}}

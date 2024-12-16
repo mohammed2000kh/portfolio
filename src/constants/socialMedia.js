@@ -1,4 +1,5 @@
 import {
+    AiFillFacebook,
     AiFillGithub,
     AiFillInstagram,
     AiFillLinkedin,
@@ -10,7 +11,7 @@ export const SOCIAL_MEDIA = [
     {
         id: "social-media-1",
         icon: AiFillLinkedin,
-        link: "https://www.linkedin.com/in/sudhanva-nadiger-b616a6212/",
+        link: "https://www.linkedin.com/in/mhd-khalifeh-96a6a6193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     // {
     //     id: "social-media-2",
@@ -20,16 +21,21 @@ export const SOCIAL_MEDIA = [
     {
         id: "social-media-3",
         icon: AiFillMail,
-        link: "mailto:sudhanvanadiger12@gmail.com",
+        link: "mailto:@gmail.com",
     },
     {
         id: "social-media-4",
         icon: AiFillInstagram,
-        link: "https://www.instagram.com/sudhanva_nadiger__",
+        link: "https://www.instagram.com/galileoaw/",
     },
     {
         id: "social-media-5",
         icon: AiFillTwitterCircle,
-        link: "https://twitter.com/SudhanvaNadiger",
+        link: "https://x.com/MohamadAbd70334",
+    },
+    {
+        id: "social-media-6",
+        icon: AiFillFacebook,
+        link: "https://www.facebook.com/mohammad.abdulrazzak.73",
     },
 ];
