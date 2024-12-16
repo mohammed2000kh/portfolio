@@ -11,6 +11,7 @@ const Navbar = () => {
   // دالة لتغيير اللغة
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
+    setToggle(false); // إغلاق القائمة بعد تغيير اللغة
   };
 
   const navs = t("navs", { returnObjects: true }) || [];
@@ -63,7 +64,7 @@ const Navbar = () => {
 
         <div
           className={`${toggle ? "opacity-1" : "opacity-0"} p-4 bg-dark_primary
-        absolute top-20 right-0 mx-4 my-0
+        absolute top-20  mx-4 my-0
         min-w-[140px] rounded-xl sidebar duration-800 transition-all ease-out`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">

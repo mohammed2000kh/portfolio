@@ -1,15 +1,12 @@
 import React from "react";
 import Button from "./Button";
-import { SOCIAL_MEDIA, RESUME_LINK, ABOUT_ME } from '../constants'
+import { SOCIAL_MEDIA, RESUME_LINK, ABOUT_ME } from "../constants";
 import { useTranslation } from "react-i18next";
-// import { AiFillGithub } from "react-icons/ai";
-
-// استيراد الصورة الخاصة بك
-// import personalImage from '../assets/images/personal.jpg';
+import { AiOutlineFilePdf } from "react-icons/ai"; // استيراد أيقونة السيرة الذاتية
 
 const Footer = () => {
-  const { t,i18n } = useTranslation();
-	const isArabic = i18n.language === 'ar';
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
   const about = t("about_me", { returnObjects: true }) || [];
   const personalImage = "/MedicalLogo.jpg";
 
@@ -34,24 +31,23 @@ const Footer = () => {
                 target="_blank"
                 key={social.id}
                 index={index}
-                className={`${isArabic?`ml-5`:`mr-5`}  text-[30px] hover:text-[#F5F9FD]`}
+                className={`${isArabic ? `ml-5` : `mr-5`}  text-[30px] hover:text-[#F5F9FD]`}
               >
                 {React.createElement(social.icon)}
               </a>
             ))}
           </div>
 
-          <div className="grid grid-cols-2">
-            <a href={RESUME_LINK} target="_blank">
-              <Button styles={`mt-10 mr-3 ${isArabic?`text-[16px]`:``}`} text={about.resume} icon="AiFillGithub" />
+          {/* زر السيرة الذاتية */}
+          <div className="mt-10 flex items-center">
+            <a
+              href={RESUME_LINK}
+              target="_blank"
+              className="flex items-center bg-dark_primary text-white py-2 px-4 rounded-lg shadow-md hover:bg-gray-800 transition-all duration-300"
+            >
+              <AiOutlineFilePdf className="text-[24px] mr-2" />
+              <span className={`text-white ${isArabic ? "text-[16px]" : ""}`}>{about.resume}</span>
             </a>
-            {/* <a href={REPO_LINK} target="_blank">
-            <Button
-              styles="mt-10 inline-flex items-center justify-center"
-              text="Star"
-              icon={AiFillGithub}
-            />
-          </a> */}
           </div>
         </div>
 
@@ -65,6 +61,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
