@@ -18,7 +18,7 @@
     "content": [
       {
         "organisation": "مبادرة الصحة العالمية",
-        "logo": "src/assets/images/Experience/MedicalLogo.JPG",
+        "logo": "src/assets/images/Experience/MedicalLogo.jpg",
         "link": "https://www.globalhealth.org/",
         "position": [
           {
@@ -46,7 +46,7 @@
       },
       {
         "organisation": "مستشفى المدينة العام",
-        "logo": "src/assets/images/Experience/ResearchLogo.JPG",
+        "logo": "src/assets/images/Experience/ResearchLogo.jpg",
         "link": "https://www.cityhospital.com/",
         "position": [
           {
@@ -74,7 +74,7 @@
       },
       {
         "organisation": "المركز الوطني للبحوث",
-        "logo": "src/assets/images/Experience/HospitalLogo.JPG",
+        "logo": "src/assets/images/Experience/HospitalLogo.jpg",
         "link": "https://www.nrc-research.org/",
         "position": [
           {
