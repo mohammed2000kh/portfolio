@@ -5,12 +5,13 @@ import { useTranslation } from "react-i18next";
 // import { AiFillGithub } from "react-icons/ai";
 
 // استيراد الصورة الخاصة بك
-import personalImage from '../assets/images/personal.jpg'; // تأكد من صحة المسار
+// import personalImage from '../assets/images/personal.jpg';
 
 const Footer = () => {
   const { t,i18n } = useTranslation();
 	const isArabic = i18n.language === 'ar';
   const about = t("about_me", { returnObjects: true }) || [];
+  const personalImage = "src/assets/images/Experience/MedicalLogo.jpg";
   return (
     <footer id="contact" className="bg-secondaryLinear sm:px-16 px-6">
       <div
