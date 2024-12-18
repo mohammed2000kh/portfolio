@@ -37,9 +37,9 @@ const Hero = () => {
         </div>
 
         {/* first col */}
-        <div className={`pb-20 ${isArabic ? `px-20` : `px-20`} pt-10 mt-10 laptop:pl-10 w-auto flex flex-col`}>
+        <div className={`laptop:pb-20 ${isArabic ? `px-20` : `px-20`} pt-10 mt-10 laptop:pl-10 w-auto flex flex-col`}>
           <div className='flex flex-col justify-between items-center w-full p-1'>
-            <h2 className={`flex-1 flex flex-col items-center font-Inria text-center font-semibold ${isArabic ? `text-[62px]` : `text-[52px]`} text-white leading-[75px] p-4`}>
+            <h2 className={`flex-1 flex flex-col items-center font-Inria text-center font-semibold ${isArabic ? `text-[62px]` : `text-[52px]`} text-white leading-[75px] p-4 `}>
               {info.title}
               <br className='xs:hidden block' /> {" "}
               {info.sub1 + " "}
@@ -47,7 +47,7 @@ const Hero = () => {
               {info.sub2}
             </h2>
             <div className="flex flex-col w-full items-center ">
-              <h1 className={` text-dark_primary font-Poppins ${isArabic ? `text-[66px]` : `text-[56px]`} leading-[70px]`}>
+              <h1 className={` text-dark_primary font-Poppins ${isArabic ? `text-[66px]` : `text-[56px]`} ${isArabic ? `leading-[70px]` : `leading-[30px]`} `}>
                 {info.firstName}
                 <span className="text-dark_primary"> <h1 className="text-[56px] sm:text-inherit text-center font-Poppins leading-[75px]" >{info.LastName}</h1></span>
               </h1>
@@ -74,13 +74,13 @@ const Hero = () => {
             transition={{ duration: 1, type: 'spring', stiffness: "120" }}
           >
             <a href={linkedInLink} target="_blank">
-              <Button styles={`w-full bg-letsConnect ${isArabic ? `text-[25px]` : `text-[15px]`} font-bold mt-3`} text={info.lets_connect} />
+              <Button styles={`w-full bg-letsConnect  ${isArabic ? `text-[25px]` : `text-[15px]`} font-bold ${isArabic ? `mt-10` : `mt-3`}`} text={info.lets_connect} />
             </a>
           </motion.div>
         </div>
 
         {/* sec col */}
-        <div className={`md:h-[37rem] pointer-events-none ${isArabic ? `mt-24` : `mt-16`} `}>
+        <div className={`md:h-[37rem] pointer-events-none ${isArabic ? `mt-14` : `mt-10`} `}>
           <Lottie 
             loop 
             animationData={Hero_person} 

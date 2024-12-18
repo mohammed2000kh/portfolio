@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Lottie from "react-lottie-player";
-import animationData from "../assets/images/Education/login.json";
+import AnimationData from "../assets/images/Education/login.json";
 import { motion } from "framer-motion";
 import universityLogo from '../assets/images/Education/tuebingen-university-logo.png';
 
@@ -9,10 +9,11 @@ import universityLogo from '../assets/images/Education/tuebingen-university-logo
 const defaultOptions = {
   loop: true,
   autoplay: true,
-  animationData: animationData,
+  animationData: AnimationData,
+  progressiveLoad: true,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
-  },
+    preserveAspectRatio: "xMaxYmax meet"
+  }
 };
 
 const FeatureCard = (props) => {
@@ -74,7 +75,17 @@ const Education = () => {
         transition={{ duration: 1 }}
       >
         <div className="sm:w-[400px] sm:h-[400px] w-[300px] h-[300px] relative z-[5] flex md:flex-row flex-col-reverse py-0 sm:py-6 pointer-events-none">
-          <Lottie {...defaultOptions} />
+        <Lottie 
+            loop 
+            animationData={AnimationData} 
+            play 
+            {...defaultOptions}  
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover'  // تجعل الأنيميشن يملأ الحاوية
+            }}
+          />
         </div>
 
         <div className={`flex-1 flex justify-center items-start flex-col`}>

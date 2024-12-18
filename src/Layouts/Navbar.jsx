@@ -26,7 +26,7 @@ const Navbar = () => {
         {navs.map((nav, index) => (
           <li
             key={nav.link}
-            className={`font-poppins font-semibold cursor-pointer text-[16px] px-4 hover:text-[#5b86cd] sm:mr-6 text-dark_primary`}
+            className={`font-poppins py-2 font-semibold cursor-pointer text-[16px] px-4 hover:text-[#5b86cd] sm:mr-6 text-dark_primary rounded-lg shadow-md`}
           >
             <a key={nav.link + index} href={`${nav.link}`}>{nav.title}</a>
           </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* زر تغيير اللغة */}
         <li className="font-poppins font-semibold cursor-pointer text-[16px] px-4 sm:mr-6 text-dark_primary relative">
-          <div className="bg-transparent border-none cursor-pointer p-2 rounded-lg shadow-md hover:bg-gray-100 transition-all duration-300 focus:outline-none">
+          <div className="bg-transparent border-none cursor-pointer p-2 rounded-lg shadow-md hover:bg-[#5b86cd] transition-all duration-300 focus:outline-none">
             <select
               onChange={(e) => handleLanguageChange(e.target.value)}
               className="bg-transparent text-dark_primary border-none w-full cursor-pointer focus:outline-none"
@@ -80,11 +80,11 @@ const Navbar = () => {
             ))}
 
             {/* زر تغيير اللغة في النسخة المحمولة */}
-            <li className="font-poppins font-semibold cursor-pointer text-[16px] text-center text-white w-full">
-              <div className="bg-transparent border-none cursor-pointer p-2 rounded-lg shadow-md hover:bg-gray-600 transition-all duration-300 focus:outline-none">
+            <li className=" font-poppins font-semibold cursor-pointer text-[16px] text-center text-white w-full">
+              <div className="bg-transparent border-none cursor-pointer p-2 rounded-lg shadow-md transition-all duration-300 focus:outline-none">
                 <select
                   onChange={(e) => handleLanguageChange(e.target.value)}
-                  className="bg-transparent text-white border-none w-full cursor-pointer focus:outline-none"
+                  className="bg-dark_primary text-white border-none w-full cursor-pointer focus:outline-none"
                 >
                   <option value="en" className="p-2 hover:bg-gray-200">
                     English
